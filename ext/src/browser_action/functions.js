@@ -13,6 +13,10 @@ chrome.tabs.query({
 		get_charts(hostname);
 
 		//get news calls and display
+		news_search(hostname);
+
+		var name = document.getElementById("name");
+		name.innerHTML = hostname;
 	});
 
 function get_hostname(data){
@@ -61,19 +65,20 @@ function make_charts(values_gender,values_ethnicity ,colors){
 	var pie = new d3pie("pieChart_gender", {
 
 		"size": {
-			"canvasWidth": 590,
+			"canvasWidth": 200,
+			"canvasHeight": 200,
 			"pieOuterRadius": "100%"
 		},
 		"data": {
 			"sortOrder": "value-desc",
 			"content": [
 				{
-					"label": "Female",
+					"label": "female",
 					"value": values_gender[0],
 					"color": colors[2]
 				},
 				{
-					"label": "Male",
+					"label": "male",
 					"value": values_gender[1],
 					"color": colors[3]
 				}
@@ -86,7 +91,7 @@ function make_charts(values_gender,values_ethnicity ,colors){
 			},
 			"inner": {
 				"format": "label-percentage2",
-				"hideWhenLessThanPercentage": 3
+				"hideWhenLessThanPercentage": 5
 			},
 			"mainLabel": {
 				"color": "#000000",
@@ -125,39 +130,40 @@ function make_charts(values_gender,values_ethnicity ,colors){
 	var pie = new d3pie("pieChart_ethnicity", {
 
 		"size": {
-			"canvasWidth": 590,
+			"canvasWidth": 200,
+			"canvasHeight": 200,
 			"pieOuterRadius": "100%"
 		},
 		"data": {
 			"sortOrder": "value-desc",
 			"content": [
 				{
-					"label": "White",
+					"label": "white",
 					"value": values_ethnicity[0],
 					"color": colors[0]
 				},
 				{
-					"label": "Asian",
+					"label": "asian",
 					"value": values_ethnicity[1],
 					"color": colors[1]
 				},
 				{
-					"label": "Latino",
+					"label": "latino",
 					"value": values_ethnicity[2],
 					"color": colors[2]
 				},
 				{
-					"label": "Black",
+					"label": "black",
 					"value": values_ethnicity[3],
 					"color": colors[3]
 				},
 				{
-					"label": "Multi",
+					"label": "multi",
 					"value": values_ethnicity[4],
 					"color": colors[4]
 				},
 				{
-					"label": "Other",
+					"label": "other",
 					"value": values_ethnicity[5],
 					"color": colors[5]
 				}
@@ -170,7 +176,7 @@ function make_charts(values_gender,values_ethnicity ,colors){
 			},
 			"inner": {
 				"format": "label-percentage2",
-				"hideWhenLessThanPercentage": 3
+				"hideWhenLessThanPercentage": 5
 			},
 			"mainLabel": {
 				"color": "#000000",
@@ -205,4 +211,29 @@ function make_charts(values_gender,values_ethnicity ,colors){
 			"highlightLuminosity": 0.7
 		}
 	});
+}
+
+function news_search(company){
+	var key = 'f149e7bbd82a499b9554a152cc835be8';
+	var host = 'https://api.cognitive.microsoft.com';
+	var path = '/bing/v7.0/news/search';
+	var term =  company + ' workplace diversity'; //add input
+
+	console.log(term);
+
+	var headlines =["headline1", "headline2", "headline3"];
+	var descs = ["desc1", "desc2", "desc3"];
+
+	fetch (host + path + '?q=' + encodeURIComponent(term) + '&count=3', 
+		{ headers: { "Ocp-Apim-Subscription-Key" : key}})
+	.then((resp) => resp.json())
+	.then((body) => { 
+
+		for(var i=0;i<3;i++){
+			var hl = document.getElementById(headlines[i]);
+			hl.innerHTML = '<a href="'+body.value[i].url+'">'+body.value[i].name+'</a>'; 
+			var desc = document.getElementById(descs[i]);	
+			desc.innerHTML = body.value[i].description;
+		}
+	})
 }

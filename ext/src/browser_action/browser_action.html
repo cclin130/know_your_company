@@ -1,19 +1,117 @@
+<!doctype html>
+<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+<style type="text/css">
+	#mainPopup {
+		padding: 5px 20px 8px 20px;
+		width: 400px;
+		border: 2px solid; 
+		border-color: #7fd3f7;
+		border-radius: 20px;
+		font-family: 'Exo';
+	}
+
+	h1{
+		font-size: 20px;
+		color: #7fd3f7;
+		margin-bottom: 6px;
+	}
+
+	h2{
+		font-size: 14px;
+		font-weight: bold;
+		color: #7fd3f7;
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+
+	.row{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 8px;
+	}
+
+	.col{
+		margin: 0px 8px 0px 8px;
+		text-align: center;
+	}
+
+	.headline{
+		display: flex;
+		font-size: 12px;
+		color: #7fd3f7;
+		justify-content: left;
+		margin: 5px 0px 5px 0px;
+	}
+
+	.desc{
+		isplay: flex;
+		font-size: 11px;
+		color: #000000;
+		padding: 0px 0px 8px 0px;
+		justify-content: left;
+		border-spacing: 5px;
+		border-bottom: 1px solid;
+		border-color: #7fd3f7;
+	}
+
+	.desc_last{
+		isplay: flex;
+		font-size: 11px;
+		color: #000000;
+		padding: 0px 0px 8px 0px;
+		justify-content: left;
+	}
+
+</style>
+
+<!--To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/browser_action/browser_action.html. The CSS is there, too.-->
 <html>
-    <head>
-    	<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
-		<style>
-		body {
-		    font-family: 'Exo';font-size: 22px;
-		}
-		</style>
-    	<script src='d3.v4.min.js'></script>
-		<script src="d3pie.min.js"></script>
+
+	<head>
+		<title>Know Your Company</title>
 	</head>
+
 	<body>
-		<div id="pieChart_gender"></div>
-		<div id="pieChart_ethnicity"></div>
+	<div id="mainPopup">
+		<h1>know your company: <span id="name"></span> </h1>
+  		<div class="row">
+   			<div class="col">
+   				<h2>gender diversity</h2>
+   				<div id="pieChart_gender"></div> 
+   			</div>
+    		<div class="col">
+      			<h2>ethnic diversity</h2>
+      			<div id="pieChart_ethnicity"></div>
+   			</div>
+		</div>	
+		<div class="row">
+			<h2>in the news</h2>
+		</div>
 
-		<script src="functions.js"></script>
+		<div class="headline">
+			<div id="headline1"></div>
+		</div>	
+		<div class="desc">
+			<div id="desc1"></div>
+		</div>
 
+		<div class="headline">
+			<div id="headline2"></div>
+		</div>	
+		<div class="desc">
+			<div id="desc2"></div>
+		</div>
+
+		<div class="headline">
+			<div id="headline3"></div>
+		</div>	
+		<div class="desc_last">
+			<div id="desc3"></div>
+		</div>
+	</div>
 	</body>
 </html>
+
+<script src='d3.v4.min.js'></script>
+<script src="d3pie.min.js"></script>
+<script src="functions.js"></script>
