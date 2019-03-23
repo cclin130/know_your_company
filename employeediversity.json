@@ -1,0 +1,403 @@
+{
+   "Facebook": [
+      {
+         "%Female": 35,
+         "%Male": 65,
+         "%White": 49,
+         "%Asian": 40,
+         "%Latino": 5,
+         "%Black": 3,
+         "%Multi": 3,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Instagram": [
+      {
+         "%Female": 35,
+         "%Male": 65,
+         "%White": 49,
+         "%Asian": 40,
+         "%Latino": 5,
+         "%Black": 3,
+         "%Multi": 3,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Google": [
+      {
+         "%Female": 31,
+         "%Male": 69,
+         "%White": 56,
+         "%Asian": 35,
+         "%Latino": 4,
+         "%Black": 2,
+         "%Multi": 4,
+         "%Other": 1,
+         "%Undeclared": 0
+      },
+      {
+         "%Female": 31,
+         "%Male": 69,
+         "%White": 53,
+         "%Asian": 36,
+         "%Latino": 4,
+         "%Black": 3,
+         "%Multi": 4,
+         "%Other": 0,
+         "%Undeclared": 0
+      }
+   ],
+   "YouTube": [
+      {
+         "%Female": 31,
+         "%Male": 69,
+         "%White": 56,
+         "%Asian": 35,
+         "%Latino": 4,
+         "%Black": 2,
+         "%Multi": 4,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "LinkedIn": [
+      {
+         "%Female": 42,
+         "%Male": 58,
+         "%White": 52,
+         "%Asian": 39,
+         "%Latino": 4,
+         "%Black": 4,
+         "%Multi": 2,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Pinterest": [
+      {
+         "%Female": 45,
+         "%Male": 55,
+         "%White": 48,
+         "%Asian": 41,
+         "%Latino": 6,
+         "%Black": 3,
+         "%Multi": 2,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Tumblr": [
+      {
+         "%Female": 37,
+         "%Male": 63,
+         "%White": 45,
+         "%Asian": 44,
+         "%Latino": 4,
+         "%Black": 2,
+         "%Multi": 2,
+         "%Other": 3,
+         "%Undeclared": 0
+      }
+   ],
+   "Flickr": [
+      {
+         "%Female": 37,
+         "%Male": 63,
+         "%White": 45,
+         "%Asian": 44,
+         "%Latino": 4,
+         "%Black": 2,
+         "%Multi": 2,
+         "%Other": 3,
+         "%Undeclared": 0
+      }
+   ],
+   "Twitter": [
+      {
+         "%Female": 38,
+         "%Male": 62,
+         "%White": 44,
+         "%Asian": 26,
+         "%Latino": 3,
+         "%Black": 3,
+         "%Multi": 3,
+         "%Other": 0,
+         "%Undeclared": 21
+      }
+   ],
+   "Yahoo!": [
+      {
+         "%Female": 37,
+         "%Male": 63,
+         "%White": 45,
+         "%Asian": 44,
+         "%Latino": 4,
+         "%Black": 2,
+         "%Multi": 2,
+         "%Other": 3,
+         "%Undeclared": 0
+      }
+   ],
+   "Apple": [
+      {
+         "%Female": 32,
+         "%Male": 68,
+         "%White": 54,
+         "%Asian": 21,
+         "%Latino": 13,
+         "%Black": 9,
+         "%Multi": 3,
+         "%Other": 1,
+         "%Undeclared": 2
+      }
+   ],
+   "Cisco": [
+      {
+         "%Female": 24,
+         "%Male": 76,
+         "%White": 53,
+         "%Asian": 37,
+         "%Latino": 5,
+         "%Black": 4,
+         "%Multi": 1,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "eBay": [
+      {
+         "%Female": 40,
+         "%Male": 60,
+         "%White": 50,
+         "%Asian": 39,
+         "%Latino": 6,
+         "%Black": 3,
+         "%Multi": 1,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "HP": [
+      {
+         "%Female": 37,
+         "%Male": 63,
+         "%White": 73,
+         "%Asian": 12,
+         "%Latino": 8,
+         "%Black": 4,
+         "%Multi": 2,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Indiegogo": [
+      {
+         "%Female": 50,
+         "%Male": 50,
+         "%White": 58,
+         "%Asian": 28,
+         "%Latino": 7,
+         "%Black": 4,
+         "%Multi": 0,
+         "%Other": 3,
+         "%Undeclared": 0
+      }
+   ],
+   "Nvidia": [
+      {
+         "%Female": 17,
+         "%Male": 83,
+         "%White": 37,
+         "%Asian": 45,
+         "%Latino": 3,
+         "%Black": 1,
+         "%Multi": 14,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Dell": [
+      {
+         "%Female": 28,
+         "%Male": 72,
+         "%White": 69,
+         "%Asian": 9,
+         "%Latino": 11,
+         "%Black": 10,
+         "%Multi": 0,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Ingram Micro": [
+      {
+         "%Female": 31,
+         "%Male": 69,
+         "%White": 52,
+         "%Asian": 14,
+         "%Latino": 19,
+         "%Black": 14,
+         "%Multi": 1,
+         "%Other": 0,
+         "%Undeclared": 0
+      }
+   ],
+   "Intel": [
+      {
+         "%Female": 27,
+         "%Male": 74,
+         "%White": 48,
+         "%Asian": 39,
+         "%Latino": 9,
+         "%Black": 4,
+         "%Multi": 0,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Groupon": [
+      {
+         "%Female": 44,
+         "%Male": 56,
+         "%White": 62,
+         "%Asian": 20,
+         "%Latino": 8,
+         "%Black": 8,
+         "%Multi": 0,
+         "%Other": 3,
+         "%Undeclared": 0
+      }
+   ],
+   "Amazon": [
+      {
+         "%Female": 39,
+         "%Male": 61,
+         "%White": 48,
+         "%Asian": 13,
+         "%Latino": 13,
+         "%Black": 21,
+         "%Multi": 0,
+         "%Other": 5,
+         "%Undeclared": 0
+      }
+   ],
+   "Etsy ": [
+      {
+         "%Female": 54,
+         "%Male": 46,
+         "%White": 79,
+         "%Asian": 10,
+         "%Latino": 4,
+         "%Black": 3,
+         "%Multi": 4,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Microsoft": [
+      {
+         "%Female": 26,
+         "%Male": 74,
+         "%White": 56,
+         "%Asian": 31,
+         "%Latino": 6,
+         "%Black": 4,
+         "%Multi": 2,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Salesforce": [
+      {
+         "%Female": 31,
+         "%Male": 69,
+         "%White": 65,
+         "%Asian": 24,
+         "%Latino": 4,
+         "%Black": 3,
+         "%Multi": 3,
+         "%Other": 0,
+         "%Undeclared": 2
+      }
+   ],
+   "Pandora": [
+      {
+         "%Female": 49,
+         "%Male": 51,
+         "%White": 65,
+         "%Asian": 16,
+         "%Latino": 8,
+         "%Black": 5,
+         "%Multi": 5,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Uber": [
+      {
+         "%Female": 38,
+         "%Male": 62,
+         "%White": 49,
+         "%Asian": 32,
+         "%Latino": 6,
+         "%Black": 8,
+         "%Multi": 4,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Slack": [
+      {
+         "%Female": 45,
+         "%Male": 55,
+         "%White": 59,
+         "%Asian": 24,
+         "%Latino": 7,
+         "%Black": 5,
+         "%Multi": 4,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "AirBnB ": [
+      {
+         "%Female": 41,
+         "%Male": 59,
+         "%White": 50,
+         "%Asian": 36,
+         "%Latino": 7,
+         "%Black": 3,
+         "%Multi": 3,
+         "%Other": 1,
+         "%Undeclared": 0
+      }
+   ],
+   "Netflix": [
+      {
+         "%Female": 43,
+         "%Male": 57,
+         "%White": 49,
+         "%Asian": 24,
+         "%Latino": 6,
+         "%Black": 4,
+         "%Multi": 0,
+         "%Other": 4,
+         "%Undeclared": 13
+      }
+   ],
+   "Yelp": [
+      {
+         "%Female": 54,
+         "%Male": 46,
+         "%White": 62,
+         "%Asian": 15,
+         "%Latino": 10,
+         "%Black": 6,
+         "%Multi": 5,
+         "%Other": 2,
+         "%Undeclared": 0
+      }
+   ]
+}
