@@ -1,0 +1,31 @@
+{
+  "name": "know_your_company",
+  "version": "1.0.0",
+  "description": "TechTogether 2019",
+  "main": "functions.js",
+  "dependencies": {
+    "dataframe-js": "^1.4.0",
+    "jquery-csv": "^0.8.12"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cclin130/know_your_company.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cclin130/know_your_company/issues"
+  },
+  "homepage": "https://github.com/cclin130/know_your_company#readme"
+}
