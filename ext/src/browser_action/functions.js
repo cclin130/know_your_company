@@ -7,7 +7,6 @@ chrome.tabs.query({
 
 	    //get hostname from URL
 	    get_hostname(tabURL);
-		console.log(hostname);
 
 		//get pie charts using hostname
 		get_charts(hostname);
@@ -57,7 +56,11 @@ function get_charts(company){
 						    }
 						  )
 						  .catch(function(err) {
-						    console.log('Fetch Error :-S', err);
+						    console.log('Company name not found', err);
+
+						    make_empty_chart();
+
+
 						  });
 }
 
@@ -199,6 +202,130 @@ function make_charts(values_gender,values_ethnicity ,colors){
 			},
 			"truncation": {
 				"enabled": true
+			}
+		},
+		"effects": {
+			"pullOutSegmentOnClick": {
+				"effect": "linear",
+				"speed": 400,
+				"size": 8
+			},
+			"highlightSegmentOnMouseover": false,
+			"highlightLuminosity": 0.7
+		}
+	});
+}
+
+function make_empty_chart(){
+	var pie = new d3pie("pieChart_gender", {
+
+		"header": {
+			"title": {
+				"text": "no data available",
+				"font": "exo",
+				"fontSize": 12,
+			},
+			"location": "pie-center",
+			"titleSubtitlePadding": 9
+		},
+		"size": {
+			"canvasHeight": 200,
+			"canvasWidth": 200,
+			"pieOuterRadius": "100%"
+		},
+		"data": {
+			"sortOrder": "value-desc",
+			"content": [
+				{
+					"label": " ",
+					"value": 1,
+					"color": "#efefef"
+				}
+			]
+		},
+		"labels": {
+			"outer": {
+				"format": "none",
+				"pieDistance": 100
+			},
+			"inner": {
+				"format": "label"
+			},
+			"mainLabel": {
+				"font": "exo",
+				"fontSize": 12
+			},
+			"percentage": {
+				"color": "#ffffff",
+				"decimalPlaces": 0
+			},
+			"value": {
+				"color": "#adadad",
+				"fontSize": 11
+			},
+			"lines": {
+				"enabled": false
+			}
+		},
+		"effects": {
+			"pullOutSegmentOnClick": {
+				"effect": "linear",
+				"speed": 400,
+				"size": 8
+			},
+			"highlightSegmentOnMouseover": false,
+			"highlightLuminosity": 0.7
+		}
+	});
+
+	var pie = new d3pie("pieChart_ethnicity", {
+
+		"header": {
+			"title": {
+				"text": "no data available",
+				"font": "exo",
+				"fontSize": 12,
+			},
+			"location": "pie-center",
+			"titleSubtitlePadding": 9
+		},
+		"size": {
+			"canvasHeight": 200,
+			"canvasWidth": 200,
+			"pieOuterRadius": "100%"
+		},
+		"data": {
+			"sortOrder": "value-desc",
+			"content": [
+				{
+					"label": " ",
+					"value": 1,
+					"color": "#efefef"
+				}
+			]
+		},
+		"labels": {
+			"outer": {
+				"format": "none",
+				"pieDistance": 100
+			},
+			"inner": {
+				"format": "label"
+			},
+			"mainLabel": {
+				"font": "exo",
+				"fontSize": 12
+			},
+			"percentage": {
+				"color": "#ffffff",
+				"decimalPlaces": 0
+			},
+			"value": {
+				"color": "#adadad",
+				"fontSize": 11
+			},
+			"lines": {
+				"enabled": false
 			}
 		},
 		"effects": {
