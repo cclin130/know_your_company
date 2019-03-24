@@ -1,5 +1,5 @@
 # Know Your Company
-Submission for TechTogether 2019
+Submission for TechTogether 2019. Devpost submission [here](https://devpost.com/software/know_your_company).
 
 ## Project Overview
 
