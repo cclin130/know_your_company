@@ -1,5 +1,5 @@
 # Know Your Company
-Submission for TechTogether 2019. Devpost submission [here](https://devpost.com/software/know_your_company).
+Submission for TechTogether 2019. Won Spark's Best Inclusion in Tech Hack and TechTogether's Best Gender Equality Hack. Devpost submission [here](https://devpost.com/software/know_your_company).
 
 ## Project Overview
 
